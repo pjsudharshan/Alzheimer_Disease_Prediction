@@ -26,7 +26,7 @@ class MyOneHotEncoder(object):
 
         le.fit(data_frame[col_name])
 
-        dataf[col_name] = le.transform(dataf[col_name])  # .astype(np.float)
+        dataf[col_name] = le.transform(dataf[col_name])
         # The categorical attributes must be gone and replaced by numbers
 
         encoder = OneHotEncoder()
@@ -47,7 +47,7 @@ class MyOneHotEncoder(object):
 
         le.fit(data_frame[col_name])
 
-        dataf[col_name] = le.transform(dataf[col_name])  # .astype(np.float)
+        dataf[col_name] = le.transform(dataf[col_name])
         # The categorical attributes must be gone and replaced by numbers
         print(dataf[col_name].dtype)
 
